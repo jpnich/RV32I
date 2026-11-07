@@ -1,6 +1,6 @@
 # RV32I 5 Stage Pipeline and Single-Cycle Implemented on DE10-Lite FPGA
 ## Overview
-The primary aim of this project is to compare the compilation logs in Quartus of the single-cycle versus the pipeline to quantify the effects of pipelining a microprocessor. From a more personal point of view, I wanted to develop my understanding of RISV architecture, datapath and controller design, RV32I instruction encoding, pipelining (and dealing with pipeline hazards) and more generally improve my skills in RTL design and verification - all of which I successfully achieved.  
+The primary aim of this project is to compare the compilation logs in Quartus of the single-cycle versus the pipeline to quantify the effects of pipelining a microprocessor. From a more personal point of view, I wanted to develop my understanding of RISCV architecture, datapath and controller design, RV32I instruction encoding, pipelining (and dealing with pipeline hazards) and more generally improve my skills in RTL design and verification - all of which I successfully achieved.  
 
 Note: the full RV32I instruction set has yet to be implemented (see below), however, it is my intention to implement all instructions fully in the near future.
 
