@@ -21,4 +21,11 @@ SystemVerilog is used for all RTL design throughout, including testbenches; Veri
 
 The pipeline design implements all I-type, R-type, B-type instructions plus load and store, however, jumps and the rest of the load/store instructions have yet to be implemented - I will be coming back to this. In terms of an architectural POV (see block diagrams below), the single-cycle involves an ALU, ALU controller, program counter, controller, instruction memory, data memory, immediate generator and a few multiplexers and some logic gates. The pipeline builds on this adding 4 pipeline registers (IFID, IDEX, EXMEM, MEMWB), a bypass unit for data forwarding, a stall unit for load-use stalls and pipeline flushing for branch conditions. I need to develop a more standardised approach to testbench coverage but I'm pretty confident it fully works, given I've had it running through dozens of different, randomised instructions (I use a program.hex file to set the instruction memory).
 
-## Block Diagrams
+## Block Diagrams:
+### Single-Cycle Architecture
+<img width="1280" height="720" alt="singlecycle-blockdiagram" src="https://github.com/user-attachments/assets/5bffd98d-6f70-49f9-bc5e-e2b8382a1443" />
+### Pipelined Architecture
+<img width="1280" height="720" alt="pipeline-blockdiagram" src="https://github.com/user-attachments/assets/6f4fa26b-b635-47e7-aca6-763c906f97cb" />
+
+Note: I made these block diagrams in PowerPoint for some reason so it took a very long time, but I'm quite proud of it. Secondly, most of the actual RTL design was done with hand-drawn sketches of the architecture to figure out what signals were needed for dealing with pipeline hazards and such.
+
