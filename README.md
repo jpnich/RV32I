@@ -24,6 +24,7 @@ The pipeline design implements all I-type, R-type, B-type instructions plus load
 ## Block Diagrams:
 ### Single-Cycle Architecture
 <img width="1280" height="720" alt="singlecycle-blockdiagram" src="https://github.com/user-attachments/assets/5bffd98d-6f70-49f9-bc5e-e2b8382a1443" />
+
 ### Pipelined Architecture
 <img width="1280" height="720" alt="pipeline-blockdiagram" src="https://github.com/user-attachments/assets/6f4fa26b-b635-47e7-aca6-763c906f97cb" />
 
